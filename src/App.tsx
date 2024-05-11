@@ -121,8 +121,8 @@ function App() {
                         </TableRow>
                         <TableRow>
                           <TableCell className="!border !border-gray-300">Burst Time</TableCell>
-                          <TableCell align="center" className="!border !border-gray-300">{convertToString(rates?.burstTimeUpload ?? 0)}</TableCell>
-                          <TableCell align="center" className="!border !border-gray-300">{convertToString(rates?.burstTimeDownload ?? 0)}</TableCell>
+                          <TableCell align="center" className="!border !border-gray-300">{rates?.burstTimeUpload ?? 0}</TableCell>
+                          <TableCell align="center" className="!border !border-gray-300">{rates?.burstTimeDownload ?? 0}</TableCell>
                         </TableRow>
                         <TableRow>
                           <TableCell className="!border !border-gray-300">Limit At</TableCell>

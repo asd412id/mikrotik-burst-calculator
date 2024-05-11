@@ -89,8 +89,8 @@ export function calculateRates(rates: SpeedRates): CalculatedRates {
   const burstDownloadThreshold = getBurstThreshold(parseSpeedValue(speedDownload));
   const burstTimeUpload = getBurstTime(parseSpeedValue(bonusUpload), bonusUploadDuration, burstUploadThreshold);
   const burstTimeDownload = getBurstTime(parseSpeedValue(bonusDownload), bonusDownloadDuration, burstDownloadThreshold);
-  const limitAtUpload = Math.round(maxUploadLimit * (1 / 3));
-  const limitAtDownload = Math.round(maxDownloadLimit * (1 / 3));
+  const limitAtUpload = Math.round(maxUploadLimit / 5);
+  const limitAtDownload = Math.round(maxDownloadLimit / 5);
 
   return {
     maxUploadLimit,

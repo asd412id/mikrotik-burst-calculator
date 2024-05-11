@@ -47,15 +47,15 @@ function App() {
     <Box className="flex flex-col items-center justify-center bg-gradient-to-br from-slate-100 to-slate-300 p-3" sx={{ minHeight: '100dvh' }}>
       <div className="flex w-full lg:max-w-screen-xl">
         <Card elevation={5} className="w-full">
-          <CardContent sx={{ p: 5 }}>
+          <CardContent className="!p-5 md:!p-10">
             <div className="flex flex-col gap-10">
-              <div className="flex items-center justify-center gap-3">
+              <div className="flex flex-col md:flex-row items-center justify-center gap-3">
                 <img src={logo} alt="logo" className="w-16 rounded-lg" />
-                <Typography variant="h3" align="center" className="!leading-none !p-0 !m-0">Mikrotik Burst Limit Kalkulator</Typography>
+                <Typography align="center" className="!leading-none !p-0 !m-0 !text-3xl md:!text-5xl">Mikrotik Burst Limit Kalkulator</Typography>
               </div>
               <div className="flex flex-col md:flex-row gap-10 w-full">
                 <div className="flex flex-col gap-5 w-full">
-                  <Typography className="!text-3xl" align="center">KONFIGURASI</Typography>
+                  <Typography className="!text-xl md:!text-3xl" align="center">KONFIGURASI</Typography>
                   <Table>
                     <TableHead>
                       <TableRow>
@@ -92,7 +92,7 @@ function App() {
                   </Table>
                 </div>
                 <div className="flex flex-col gap-5 w-full">
-                  <Typography className="!text-3xl" align="center">HASIL KALKULASI</Typography>
+                  <Typography className="!text-xl md:!text-3xl" align="center">HASIL KALKULASI</Typography>
                   <div className="flex flex-col gap-1">
                     <Typography>PENGATURAN QUEUE</Typography>
                     <Table size="small">

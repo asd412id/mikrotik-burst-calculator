@@ -1,5 +1,5 @@
 import { Box, Card, CardContent, Table, TableBody, TableCell, TableHead, TableRow, TextField, Typography } from "@mui/material"
-import { CalculatedRates, SpeedRates, calculateRates, convertToString, rateLimit } from "./utils/burustCalculation";
+import { CalculatedRates, SpeedRates, calculateRates, convertToString, rateLimit } from "./utils/brustCalculation";
 import { ChangeEvent, useEffect, useState } from "react";
 import { CheckCircle } from "@mui/icons-material";
 import logo from './assets/logo.jpeg';
